@@ -3,89 +3,76 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#7c3aed">
-  <meta name="description" content="Official All Video Downloader download page. Get the latest Android APK and Windows installer.">
+  <meta name="theme-color" content="#111827">
+  <meta name="description" content="Official All Video Downloader download page. Download the latest Android APK and Windows installer.">
   <meta name="author" content="Azan Khan">
-  <meta property="og:title" content="All Video Downloader — Official Download">
-  <meta property="og:description" content="Download the latest official Android APK and Windows installer.">
-  <meta property="og:image" content="icon.svg">
-  <meta name="twitter:card" content="summary">
-  <title>All Video Downloader — Official Download</title>
-  <link rel="icon" href="icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.svg">
+  <meta property="og:title" content="All Video Downloader — Download">
+  <meta property="og:description" content="Download the latest All Video Downloader app for Android and Windows.">
+  <meta property="og:image" content="static/icon.svg">
+  <title>All Video Downloader — Download</title>
+  <link rel="icon" href="static/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="static/icon.svg">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="glow glow-one"></div>
-  <div class="glow glow-two"></div>
+  <div class="glow glow-one"></div><div class="glow glow-two"></div>
 
   <header class="nav">
     <a class="brand" href="./" aria-label="All Video Downloader home">
-      <img class="brand-logo" src="icon.svg" alt="All Video Downloader logo">
+      <img class="brand-logo" src="static/icon.svg" alt="All Video Downloader logo">
       <span>All Video Downloader</span>
     </a>
-    <a class="github-link" href="https://github.com/AzanKhan-pk/All-viideo-downloader-without-watermark" target="_blank" rel="noopener">GitHub ↗</a>
+    <button class="theme-btn" id="themeBtn" type="button" aria-label="Toggle dark mode">☾ Dark</button>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="badge"><span></span> Latest release downloads</div>
-      <h1>Download the<br><strong>latest app.</strong></h1>
-      <p class="lead">Get All Video Downloader for Android or Windows from the official release. Fast, simple and always linked to the newest published build.</p>
+    <section class="hero" id="home">
+      <div class="badge"><span></span> Latest version • Fast &amp; simple</div>
+      <div class="hero-logo"><img src="static/icon.svg" alt="All Video Downloader"></div>
+      <h1>Download videos<br><strong>your way.</strong></h1>
+      <p class="lead">Get the latest All Video Downloader app for Android or Windows. Supports high-quality downloads, including <b>4K where available</b>.</p>
+
+      <div class="quality-row" aria-label="Supported quality levels">
+        <span>144p</span><span>240p</span><span>360p</span><span>480p</span><span>720p HD</span><span>1080p FHD</span><span>1440p 2K</span><span class="quality-4k">2160p 4K</span>
+      </div>
 
       <div class="download-grid">
         <a class="download-card" href="https://github.com/AzanKhan-pk/All-viideo-downloader-without-watermark/releases/latest/download/All-Video-Downloader.apk">
-          <div class="card-icon">🤖</div>
-          <div class="card-copy">
-            <small>ANDROID</small>
-            <h2>Download APK</h2>
-            <p>Latest Android application</p>
-          </div>
-          <span class="arrow">↓</span>
+          <div class="card-icon">🤖</div><div class="card-copy"><small>ANDROID</small><h2>Download APK</h2><p>Latest Android application</p></div><span class="arrow">↓</span>
         </a>
-
         <a class="download-card" href="https://github.com/AzanKhan-pk/All-viideo-downloader-without-watermark/releases/latest/download/All-Video-Downloader-Setup.exe">
-          <div class="card-icon">▣</div>
-          <div class="card-copy">
-            <small>WINDOWS</small>
-            <h2>Download EXE</h2>
-            <p>Latest Windows installer</p>
-          </div>
-          <span class="arrow">↓</span>
+          <div class="card-icon">▣</div><div class="card-copy"><small>WINDOWS</small><h2>Download EXE</h2><p>Latest Windows installer</p></div><span class="arrow">↓</span>
         </a>
       </div>
 
-      <div class="release-row">
-        <span>Latest release: <strong id="version">Checking…</strong></span>
-        <a id="release-link" href="https://github.com/AzanKhan-pk/All-viideo-downloader-without-watermark/releases/latest" target="_blank" rel="noopener">View release notes →</a>
-      </div>
+      <div class="release-row"><span>Latest release: <strong id="version">Checking…</strong></span><span class="sync">● Download links stay synced</span></div>
     </section>
 
-    <section class="features">
-      <article><b>01</b><h3>One-click downloads</h3><p>Direct buttons take you to the latest official APK or Windows installer.</p></article>
-      <article><b>02</b><h3>Always up to date</h3><p>The download links use GitHub's latest-release route, so future releases stay synced automatically.</p></article>
-      <article><b>03</b><h3>Mobile friendly</h3><p>A lightweight responsive page that works comfortably on phones and desktops.</p></article>
+    <section class="features" id="features">
+      <article><b>01</b><h3>High quality</h3><p>Choose from available resolutions up to 4K when the original media provides it.</p></article>
+      <article><b>02</b><h3>One-click downloads</h3><p>Use the direct Android APK or Windows installer button to get the newest build.</p></article>
+      <article><b>03</b><h3>Always updated</h3><p>The download buttons automatically point to the latest published app release.</p></article>
     </section>
 
-    <section class="notice">
-      <div class="notice-icon">i</div>
-      <div><h3>Important</h3><p>Use the downloader only for media you are authorized to save and follow the terms of the platform where the media is hosted.</p></div>
+    <section class="info-grid">
+      <article id="how-to"><h2>How to use</h2><ol><li>Choose Android APK or Windows EXE above.</li><li>Install the app on your device.</li><li>Copy a supported public media link into the downloader.</li><li>Select the available quality and start the download.</li></ol></article>
+      <article id="privacy"><h2>Privacy statement</h2><p>This website is a simple download page. It does not ask you to create an account or enter passwords, and it does not intentionally collect personal information through this page. Downloaded apps may have their own behavior and privacy practices.</p></article>
+      <article id="about"><h2>About</h2><p>All Video Downloader is an independent technology project created by <strong>Azan Khan</strong>. The website provides access to the latest Android and Windows builds of the project.</p></article>
+      <article id="contact"><h2>Contact</h2><p>For project questions, feedback, or bug reports, use the contact details provided with the project release or the developer's public profile.</p></article>
     </section>
+
+    <section class="notice"><div class="notice-icon">i</div><div><h3>Use responsibly</h3><p>Only download media you have permission to save, and follow the rules and terms of the platform where the media is hosted.</p></div></section>
   </main>
 
-  <footer>
-    <span>© 2026 All Video Downloader</span>
-    <span>Built by <strong>Azan Khan</strong></span>
-  </footer>
+  <footer><span>© 2026 All Video Downloader</span><span>Built by <strong>Azan Khan</strong></span><nav><a href="#about">About</a><a href="#how-to">Usage</a><a href="#privacy">Privacy</a><a href="#contact">Contact</a></nav></footer>
 
   <script>
-    fetch('https://api.github.com/repos/AzanKhan-pk/All-viideo-downloader-without-watermark/releases/latest')
-      .then(r => r.ok ? r.json() : Promise.reject())
-      .then(data => {
-        document.getElementById('version').textContent = data.tag_name || 'Latest';
-        if (data.html_url) document.getElementById('release-link').href = data.html_url;
-      })
-      .catch(() => { document.getElementById('version').textContent = 'Latest'; });
+    fetch('https://api.github.com/repos/AzanKhan-pk/All-viideo-downloader-without-watermark/releases/latest').then(r => r.ok ? r.json() : Promise.reject()).then(data => { document.getElementById('version').textContent = data.tag_name || 'Latest'; }).catch(() => { document.getElementById('version').textContent = 'Latest'; });
+    const btn = document.getElementById('themeBtn');
+    if (localStorage.getItem('avd-theme') === 'dark') document.body.classList.add('dark');
+    function updateThemeButton(){ btn.textContent = document.body.classList.contains('dark') ? '☀ Light' : '☾ Dark'; }
+    updateThemeButton();
+    btn.addEventListener('click', () => { document.body.classList.toggle('dark'); localStorage.setItem('avd-theme', document.body.classList.contains('dark') ? 'dark' : 'light'); updateThemeButton(); });
   </script>
 </body>
 </html>
